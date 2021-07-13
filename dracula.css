@@ -71,6 +71,9 @@ body {
 a {
   color: #ff79c6;
 }
+a:hover {
+  color: #ff79c6aa;
+}
 
 .header {
   background-color: transparent;
@@ -247,6 +250,7 @@ div.panel-heading.ui-sortable-handle {
 .nav > li > a:hover {
   color: #f8f8f2;
   border-bottom: 2px solid #bcc2cd;
+  text-decoration: none;
 }
 
 .nav-pills > li.active > a,
@@ -489,7 +493,8 @@ button.close:hover span {
 }
 
 /* blue i */
-#showinfo0 {
+#showinfo0,
+#showinfo1 {
   color: #8be9fd;
 }
 
@@ -538,6 +543,7 @@ button.close:hover span {
 }
 
 /* Text area */
+pre,
 textarea {
   background-color: #282a36;
   color: #f8f8f2;
@@ -545,6 +551,7 @@ textarea {
   border: 1px solid #424450;
   overflow: auto;
   padding: 20px 20px 20px 20px;
+  box-shadow: none;
 }
 
 textarea:focus-visible {
