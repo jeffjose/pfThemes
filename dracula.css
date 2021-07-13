@@ -2,6 +2,7 @@
     - &BG        '#282A36'
     - &FG        '#F8F8F2'
     - &SELECTION '#44475A'
+    - &TEXTDULL  '#BCC2CD'
     - &COMMENT   '#6272A4'
     - &CYAN      '#8BE9FD'
     - &GREEN     '#50FA7B'
@@ -30,7 +31,7 @@
 }
 
 .navbar a {
-  color: #6272a4;
+  color: #bcc2cd;
   border-bottom-color: transparent;
   transition: color 100ms linear 0ms;
 }
@@ -82,7 +83,7 @@ a {
 
 .footer .text-muted,
 .footer a {
-  color: #6272a4;
+  color: #bcc2cd;
   transition: color 100ms linear 0ms;
 }
 .footer a:hover {
@@ -153,7 +154,7 @@ div.panel-heading.ui-sortable-handle {
 
 .table-striped > thead {
   background-color: #191a21;
-  color: #6272a4;
+  color: #bcc2cd;
 }
 
 .table-striped thead th {
@@ -212,7 +213,7 @@ div.panel-heading.ui-sortable-handle {
 .nav-pills li a {
   border-bottom: transparent;
   box-shadow: none;
-  color: #6272a4;
+  color: #bcc2cd;
   transition: color 100ms linear 0ms;
   background-color: #21222c;
 }
@@ -230,6 +231,7 @@ div.panel-heading.ui-sortable-handle {
   color: #f8f8f2;
   background-color: transparent;
   box-shadow: none;
+  font-weight: bold;
 }
 
 /* pfSense logo */
