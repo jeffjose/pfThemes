@@ -1,0 +1,59 @@
+/***** Widgets on homepage ****/
+
+.panel-default > .panel-heading {
+  background-color: transparent;
+  border: none;
+  color: var(--fgdull);
+  letter-spacing: 0px;
+  padding: 5px 10px 5px 5px;
+  margin-bottom: 10px;
+}
+
+div.panel-heading.ui-sortable-handle {
+  padding: 5px 5px;
+  margin-bottom: 0px;
+
+  /* on homepage we dont need spacing */
+}
+
+.panel-default {
+  box-shadow: none;
+  border: 0px solid var(--bgdark);
+  background-color: var(--bgdark);
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.panel-body.collapse.in {
+  padding-top: 10px;
+}
+
+.panel-title {
+  a {
+    color: var(--accent);
+    padding: 0px 0px;
+    font-size: 12px;
+  }
+
+  color: var(--accent);
+  padding: 0px 0px;
+  font-size: 12px;
+}
+
+/* Diagnostics > pfInfo */
+
+.panel-body {
+  background-color: transparent;
+  border: none;
+}
+
+.widget-heading-icon .fa {
+  color: var(--accent);
+  transition: color 100ms linear 0ms;
+  font-size: 12px;
+  margin: 0px 2px;
+
+  &:hover {
+    color: var(--fg);
+  }
+}

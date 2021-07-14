@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/jeffjose/pfsense-themes/issues"
   },
-  "homepage": "https://github.com/jeffjose/pfsense-themes#readme"
+  "homepage": "https://github.com/jeffjose/pfsense-themes#readme",
+  "dependencies": {}
 }

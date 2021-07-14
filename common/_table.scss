@@ -1,0 +1,106 @@
+/* Table */
+
+table[data-sortable].sortable-theme-bootstrap {
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.table > tbody > tr > td {
+  padding: 4px 4px 4px 10px;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 4px 5px;
+}
+
+.table.sortable-theme-bootstrap {
+  color: var(--fg);
+}
+
+.table-striped {
+  > thead {
+    background-color: var(--bgdarker);
+    color: var(--textdull);
+  }
+
+  thead th {
+    border: none;
+    font-weight: normal;
+  }
+
+  tbody td {
+    vertical-align: middle;
+  }
+}
+
+/* thead shows up in System > Advanced > System Tunables */
+
+.table {
+  tbody th,
+  thead th {
+    vertical-align: middle;
+  }
+}
+
+.table-striped {
+  > tbody > tr {
+    &:nth-of-type(odd) {
+      background-color: var(--bgdark);
+    }
+
+    &:nth-of-type(even) {
+      background-color: var(--bg);
+    }
+  }
+
+  td {
+    border: none;
+  }
+}
+
+.table > {
+  tbody > tr > {
+    td,
+    th {
+      border: none;
+    }
+  }
+
+  tfoot > tr > {
+    td,
+    th {
+      border: none;
+    }
+  }
+
+  thead > tr > {
+    td,
+    th {
+      border: none;
+    }
+  }
+}
+
+/*table-condensed - used by wireguard*/
+
+table.table-condensed {
+  thead {
+    background-color: var(--bgdarker);
+  }
+
+  tbody {
+    background-color: var(--bg);
+  }
+}
+
+/* Only for peer entries table */
+
+.peer-entries table.table-condensed > tbody > tr:hover {
+  background-color: transparent;
+}

@@ -1,0 +1,159 @@
+/* Buttons */
+
+.btn {
+  appearance: none;
+  border: 1px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 5px 16px;
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: var(--bglight);
+  border-color: var(--bglighter);
+  transition: all linear 100ms;
+  color: var(--fg);
+
+  &[disabled] {
+    cursor: default;
+    opacity: 0.4;
+    color: var(--fg);
+  }
+
+  &:hover[disabled] .fa {
+    cursor: default;
+    color: var(--fg);
+  }
+
+  .fa {
+    transition: all linear 100ms;
+    margin-right: 5px;
+  }
+}
+
+/* primary button */
+
+.btn-primary:hover:enabled {
+  border-color: var(--accent);
+  color: var(--accent);
+
+  .fa {
+    color: var(--accent);
+  }
+}
+
+/* Shows up in ART Table */
+
+a.btn-primary {
+  color: var(--fg);
+
+  &:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+
+    .fa {
+      color: var(--accent);
+    }
+  }
+}
+
+/* success button */
+
+.btn-success {
+  background-color: var(--green);
+  color: #000;
+
+  .fa {
+    background-color: var(--green);
+    color: #000;
+  }
+
+  &:hover {
+    background-color: var(--greendark);
+    color: #000;
+
+    .fa {
+      &:before {
+        background-color: transparent;
+        color: #000;
+      }
+
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}
+
+/* danger button */
+
+.btn-danger {
+  color: var(--red);
+
+  .fa {
+    color: var(--red);
+  }
+
+  &:hover {
+    background-color: var(--red);
+    color: var(--fg);
+
+    .fa {
+      color: var(--fg);
+    }
+  }
+}
+
+/* Info button */
+
+.btn-info:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+
+  .fa {
+    color: var(--accent);
+  }
+}
+
+a.btn-info {
+  color: var(--fg);
+}
+
+/* warning button */
+
+.btn-warning {
+  color: var(--orange);
+
+  .fa {
+    color: var(--orange);
+  }
+
+  &:hover {
+    background-color: var(--orange);
+    color: var(--fg);
+
+    .fa {
+      color: var(--fg);
+    }
+  }
+}
+
+button.close {
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 1;
+
+  span {
+    color: var(--accent);
+  }
+
+  &:hover span {
+    color: var(--fg);
+  }
+}

@@ -1,0 +1,100 @@
+/* Forms */
+
+.form-group {
+  padding: 3px 5px;
+}
+
+/* main focus control */
+
+.form-control {
+  background-color: var(--bgdarker);
+  outline: none;
+  border: 1px solid var(--bg);
+  box-shadow: none;
+  color: var(--fg);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 12px;
+  vertical-align: middle;
+  height: 32px;
+
+  &:focus {
+    border-color: var(--brand);
+    box-shadow: var(--brand) 0px 0px 5px 0px;
+  }
+}
+
+/*input focus glow */
+
+/* position the label at the middle  of the input */
+
+.form-horizontal .control-label {
+  padding-top: 14px;
+}
+
+/* the "/" in the subnet mask */
+
+.input-group-inbetween {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--fg);
+}
+
+input {
+  transition: none;
+
+  &:before {
+    background-color: red;
+  }
+}
+
+/* position checkbox group at the middle */
+
+.form-group .checkbox {
+  padding-top: 9px;
+}
+
+/* Text area */
+
+pre {
+  background-color: var(--bg);
+  color: var(--fg);
+  border-radius: 5px;
+  border: 1px solid var(--bglighter);
+  overflow: auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: none;
+}
+
+textarea {
+  background-color: var(--bg);
+  color: var(--fg);
+  border-radius: 5px;
+  border: 1px solid var(--bglighter);
+  overflow: auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: none;
+
+  &:focus-visible {
+    /*border: 1px solid var(--accent);*/
+    outline: none;
+  }
+}
+
+.form-control option {
+  padding: 1px;
+}
+
+/* Multiple selects */
+
+option:checked {
+  background: var(--selection)
+    linear-gradient(0deg, var(--selection) 0%, var(--selection) 100%);
+  color: var(--fg);
+}
+
+::selection {
+  background-color: var(--selection);
+}

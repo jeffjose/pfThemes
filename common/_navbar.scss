@@ -1,0 +1,130 @@
+/* Navbar */
+
+.navbar-nav {
+  padding: 5px 5px 0px 5px;
+}
+
+.navbar {
+  margin-bottom: -10px;
+  font-size: 14px;
+
+  a {
+    color: var(--textdull);
+    border-bottom-color: transparent;
+    transition: color 100ms linear 0ms;
+
+    &:hover,
+    &:focus {
+      color: var(--fg);
+      box-shadow: none;
+    }
+  }
+
+  .open a {
+    color: var(--fg);
+    background-color: var(--bgdarker);
+  }
+}
+
+.dropdown-menu {
+  font-size: 12px;
+
+  > li > a {
+    &:focus,
+    &:hover {
+      background-color: var(--selection);
+    }
+  }
+}
+
+nav.navbar.navbar-static-top.navbar-inverse {
+  background-color: var(--bgdark);
+  border: none;
+}
+
+.nav > li > a {
+  padding: 10px 10px;
+}
+
+/*** nav (interface assignments etc) **/
+
+.nav-pills {
+  box-shadow: inset 0 -1px 0 var(--bglight);
+  margin-bottom: 16px;
+
+  li {
+    margin-left: 0px;
+
+    /* border-left: 1px solid var(--bgdarker); */
+
+    &:nth-child(1) {
+      border-left: none;
+    }
+
+    a {
+      border-bottom: transparent;
+      box-shadow: none;
+      color: var(--textdull);
+      transition: all 100ms linear 0ms;
+
+      /* background-color: var(--bgdark); */
+      background-color: transparent;
+      font-size: 14px;
+    }
+  }
+}
+
+.nav > li > a {
+  padding: 10px 15px 10px 15px;
+  &:focus,
+  &:hover {
+    color: var(--fg);
+    border-bottom: 2px solid var(--textdull);
+    text-decoration: none;
+  }
+}
+
+.nav-pills > li.active > a {
+  color: var(--fg);
+  background-color: transparent;
+  box-shadow: none;
+  font-weight: bold;
+  border-bottom: 2px solid var(--brand);
+
+  &:focus,
+  &:hover {
+    color: var(--fg);
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: bold;
+    border-bottom: 2px solid var(--brand);
+  }
+}
+
+/* pfSense logo */
+
+.navbar-brand {
+  svg#logo {
+    width: 60px;
+  }
+
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.logo-st0 {
+  fill: var(--brand);
+}
+
+.logo-st1 {
+  fill: var(--fg);
+}
+
+.logo-st2 {
+  fill: var(--brand);
+}

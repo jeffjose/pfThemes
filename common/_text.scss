@@ -1,0 +1,22 @@
+/* Colors */
+
+.text-success {
+  color: var(--green);
+}
+
+.text-danger {
+  color: var(--red);
+}
+
+.text-warning {
+  color: var(--orange);
+}
+
+.text-info {
+  color: var(--cyan);
+}
+
+.bg-danger {
+  background-color: var(--red);
+  color: var(--fg);
+}

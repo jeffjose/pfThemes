@@ -1,0 +1,83 @@
+/* Banner / Alert */
+
+.alert {
+  border-radius: 6px;
+  margin: 10px 0px;
+
+  a {
+    color: inherit;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    color: inherit;
+
+    span {
+      color: inherit;
+    }
+  }
+}
+
+/* links inside alerts */
+
+/* close button inside alert */
+
+.alert-info,
+.bg-info {
+  background-color: var(--cryandarker);
+  color: var(--cyan);
+  box-shadow: none;
+  border: 1px solid var(--cyandark);
+  border-radius: 5px;
+}
+
+.alert-danger {
+  color: var(--red);
+  background-color: var(--reddarker);
+  border: 1px solid var(--reddark);
+}
+
+.alert-warning {
+  color: var(--orange);
+  background-color: var(--orangedarker);
+  border: 1px solid var(--orangedark);
+}
+
+.help-block {
+  color: var(--textdull);
+}
+
+/* blue i */
+
+#showinfo0,
+#showinfo1 {
+  color: var(--cyan);
+}
+
+.bs-callout-danger {
+  border-left-color: var(--red);
+
+  h4 {
+    color: var(--red);
+  }
+}
+
+.bs-callout-info {
+  border-left-color: var(--cyan);
+
+  h4 {
+    color: var(--cyan);
+  }
+}
+
+.bs-warning-info {
+  border-left-color: var(--orange);
+
+  h4 {
+    color: var(--orange);
+  }
+}

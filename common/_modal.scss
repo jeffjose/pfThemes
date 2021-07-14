@@ -1,0 +1,23 @@
+/* Modal */
+
+.modal-content {
+  background-color: var(--bg);
+  border-radius: 5px;
+
+  div {
+    border: none;
+  }
+}
+
+.modal-body {
+  background-color: transparent;
+}
+
+.modal-header {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+.modal-footer {
+  background-color: transparent;
+}

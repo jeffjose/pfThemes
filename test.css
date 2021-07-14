@@ -1,0 +1,715 @@
+/* Buttons */
+.btn {
+  appearance: none;
+  border: 1px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 5px 16px;
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  background-color: var(--bglight);
+  border-color: var(--bglighter);
+  transition: all linear 100ms;
+  color: var(--fg);
+}
+.btn[disabled] {
+  cursor: default;
+  opacity: 0.4;
+  color: var(--fg);
+}
+.btn:hover[disabled] .fa {
+  cursor: default;
+  color: var(--fg);
+}
+.btn .fa {
+  transition: all linear 100ms;
+  margin-right: 5px;
+}
+
+/* primary button */
+.btn-primary:hover:enabled {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn-primary:hover:enabled .fa {
+  color: var(--accent);
+}
+
+/* Shows up in ART Table */
+a.btn-primary {
+  color: var(--fg);
+}
+a.btn-primary:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+a.btn-primary:hover .fa {
+  color: var(--accent);
+}
+
+/* success button */
+.btn-success {
+  background-color: var(--green);
+  color: #000;
+}
+.btn-success .fa {
+  background-color: var(--green);
+  color: #000;
+}
+.btn-success:hover {
+  background-color: var(--greendark);
+  color: #000;
+}
+.btn-success:hover .fa {
+  background-color: transparent;
+  color: #000;
+}
+.btn-success:hover .fa:before {
+  background-color: transparent;
+  color: #000;
+}
+
+/* danger button */
+.btn-danger {
+  color: var(--red);
+}
+.btn-danger .fa {
+  color: var(--red);
+}
+.btn-danger:hover {
+  background-color: var(--red);
+  color: var(--fg);
+}
+.btn-danger:hover .fa {
+  color: var(--fg);
+}
+
+/* Info button */
+.btn-info:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn-info:hover .fa {
+  color: var(--accent);
+}
+
+a.btn-info {
+  color: var(--fg);
+}
+
+/* warning button */
+.btn-warning {
+  color: var(--orange);
+}
+.btn-warning .fa {
+  color: var(--orange);
+}
+.btn-warning:hover {
+  background-color: var(--orange);
+  color: var(--fg);
+}
+.btn-warning:hover .fa {
+  color: var(--fg);
+}
+
+button.close {
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 1;
+}
+button.close span {
+  color: var(--accent);
+}
+button.close:hover span {
+  color: var(--fg);
+}
+
+/* Table */
+table[data-sortable].sortable-theme-bootstrap {
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.table > tbody > tr > td {
+  padding: 4px 4px 4px 10px;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 4px 5px;
+}
+
+.table.sortable-theme-bootstrap {
+  color: var(--fg);
+}
+
+.table-striped > thead {
+  background-color: var(--bgdarker);
+  color: var(--textdull);
+}
+.table-striped thead th {
+  border: none;
+  font-weight: normal;
+}
+.table-striped tbody td {
+  vertical-align: middle;
+}
+
+/* thead shows up in System > Advanced > System Tunables */
+.table tbody th,
+.table thead th {
+  vertical-align: middle;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--bgdark);
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: var(--bg);
+}
+.table-striped td {
+  border: none;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+  border: none;
+}
+.table > tfoot > tr > td,
+.table > tfoot > tr > th {
+  border: none;
+}
+.table > thead > tr > td,
+.table > thead > tr > th {
+  border: none;
+}
+
+/*table-condensed - used by wireguard*/
+table.table-condensed thead {
+  background-color: var(--bgdarker);
+}
+table.table-condensed tbody {
+  background-color: var(--bg);
+}
+
+/* Only for peer entries table */
+.peer-entries table.table-condensed > tbody > tr:hover {
+  background-color: transparent;
+}
+
+/* Modal */
+.modal-content {
+  background-color: var(--bg);
+  border-radius: 5px;
+}
+.modal-content div {
+  border: none;
+}
+
+.modal-body {
+  background-color: transparent;
+}
+
+.modal-header {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+.modal-footer {
+  background-color: transparent;
+}
+
+/* Banner / Alert */
+.alert {
+  border-radius: 6px;
+  margin: 10px 0px;
+}
+.alert a {
+  color: inherit;
+  font-weight: bold;
+}
+.alert a:hover {
+  text-decoration: underline;
+}
+.alert button {
+  color: inherit;
+}
+.alert button span {
+  color: inherit;
+}
+
+/* links inside alerts */
+/* close button inside alert */
+.alert-info,
+.bg-info {
+  background-color: var(--cryandarker);
+  color: var(--cyan);
+  box-shadow: none;
+  border: 1px solid var(--cyandark);
+  border-radius: 5px;
+}
+
+.alert-danger {
+  color: var(--red);
+  background-color: var(--reddarker);
+  border: 1px solid var(--reddark);
+}
+
+.alert-warning {
+  color: var(--orange);
+  background-color: var(--orangedarker);
+  border: 1px solid var(--orangedark);
+}
+
+.help-block {
+  color: var(--textdull);
+}
+
+/* blue i */
+#showinfo0,
+#showinfo1 {
+  color: var(--cyan);
+}
+
+.bs-callout-danger {
+  border-left-color: var(--red);
+}
+.bs-callout-danger h4 {
+  color: var(--red);
+}
+
+.bs-callout-info {
+  border-left-color: var(--cyan);
+}
+.bs-callout-info h4 {
+  color: var(--cyan);
+}
+
+.bs-warning-info {
+  border-left-color: var(--orange);
+}
+.bs-warning-info h4 {
+  color: var(--orange);
+}
+
+/* Navbar */
+.navbar-nav {
+  padding: 5px 5px 0px 5px;
+}
+
+.navbar {
+  margin-bottom: -10px;
+  font-size: 14px;
+}
+.navbar a {
+  color: var(--textdull);
+  border-bottom-color: transparent;
+  transition: color 100ms linear 0ms;
+}
+.navbar a:hover, .navbar a:focus {
+  color: var(--fg);
+  box-shadow: none;
+}
+.navbar .open a {
+  color: var(--fg);
+  background-color: var(--bgdarker);
+}
+
+.dropdown-menu {
+  font-size: 12px;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  background-color: var(--selection);
+}
+
+nav.navbar.navbar-static-top.navbar-inverse {
+  background-color: var(--bgdark);
+  border: none;
+}
+
+.nav > li > a {
+  padding: 10px 10px;
+}
+
+/*** nav (interface assignments etc) **/
+.nav-pills {
+  box-shadow: inset 0 -1px 0 var(--bglight);
+  margin-bottom: 16px;
+}
+.nav-pills li {
+  margin-left: 0px;
+  /* border-left: 1px solid var(--bgdarker); */
+}
+.nav-pills li:nth-child(1) {
+  border-left: none;
+}
+.nav-pills li a {
+  border-bottom: transparent;
+  box-shadow: none;
+  color: var(--textdull);
+  transition: all 100ms linear 0ms;
+  /* background-color: var(--bgdark); */
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.nav > li > a {
+  padding: 10px 15px 10px 15px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+  color: var(--fg);
+  border-bottom: 2px solid var(--textdull);
+  text-decoration: none;
+}
+
+.nav-pills > li.active > a {
+  color: var(--fg);
+  background-color: transparent;
+  box-shadow: none;
+  font-weight: bold;
+  border-bottom: 2px solid var(--brand);
+}
+.nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: var(--fg);
+  background-color: transparent;
+  box-shadow: none;
+  font-weight: bold;
+  border-bottom: 2px solid var(--brand);
+}
+
+/* pfSense logo */
+.navbar-brand {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+  padding: 0px;
+  margin-right: 10px;
+}
+.navbar-brand svg#logo {
+  width: 60px;
+}
+
+.logo-st0 {
+  fill: var(--brand);
+}
+
+.logo-st1 {
+  fill: var(--fg);
+}
+
+.logo-st2 {
+  fill: var(--brand);
+}
+
+/* Forms */
+.form-group {
+  padding: 3px 5px;
+}
+
+/* main focus control */
+.form-control {
+  background-color: var(--bgdarker);
+  outline: none;
+  border: 1px solid var(--bg);
+  box-shadow: none;
+  color: var(--fg);
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 12px;
+  vertical-align: middle;
+  height: 32px;
+}
+.form-control:focus {
+  border-color: var(--brand);
+  box-shadow: var(--brand) 0px 0px 5px 0px;
+}
+
+/*input focus glow */
+/* position the label at the middle  of the input */
+.form-horizontal .control-label {
+  padding-top: 14px;
+}
+
+/* the "/" in the subnet mask */
+.input-group-inbetween {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--fg);
+}
+
+input {
+  transition: none;
+}
+input:before {
+  background-color: red;
+}
+
+/* position checkbox group at the middle */
+.form-group .checkbox {
+  padding-top: 9px;
+}
+
+/* Text area */
+pre {
+  background-color: var(--bg);
+  color: var(--fg);
+  border-radius: 5px;
+  border: 1px solid var(--bglighter);
+  overflow: auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: none;
+}
+
+textarea {
+  background-color: var(--bg);
+  color: var(--fg);
+  border-radius: 5px;
+  border: 1px solid var(--bglighter);
+  overflow: auto;
+  padding: 20px 20px 20px 20px;
+  box-shadow: none;
+}
+textarea:focus-visible {
+  /*border: 1px solid var(--accent);*/
+  outline: none;
+}
+
+.form-control option {
+  padding: 1px;
+}
+
+/* Multiple selects */
+option:checked {
+  background: var(--selection) linear-gradient(0deg, var(--selection) 0%, var(--selection) 100%);
+  color: var(--fg);
+}
+
+::selection {
+  background-color: var(--selection);
+}
+
+/* Colors */
+.text-success {
+  color: var(--green);
+}
+
+.text-danger {
+  color: var(--red);
+}
+
+.text-warning {
+  color: var(--orange);
+}
+
+.text-info {
+  color: var(--cyan);
+}
+
+.bg-danger {
+  background-color: var(--red);
+  color: var(--fg);
+}
+
+/***** Widgets on homepage ****/
+.panel-default > .panel-heading {
+  background-color: transparent;
+  border: none;
+  color: var(--fgdull);
+  letter-spacing: 0px;
+  padding: 5px 10px 5px 5px;
+  margin-bottom: 10px;
+}
+
+div.panel-heading.ui-sortable-handle {
+  padding: 5px 5px;
+  margin-bottom: 0px;
+  /* on homepage we dont need spacing */
+}
+
+.panel-default {
+  box-shadow: none;
+  border: 0px solid var(--bgdark);
+  background-color: var(--bgdark);
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.panel-body.collapse.in {
+  padding-top: 10px;
+}
+
+.panel-title {
+  color: var(--accent);
+  padding: 0px 0px;
+  font-size: 12px;
+}
+.panel-title a {
+  color: var(--accent);
+  padding: 0px 0px;
+  font-size: 12px;
+}
+
+/* Diagnostics > pfInfo */
+.panel-body {
+  background-color: transparent;
+  border: none;
+}
+
+.widget-heading-icon .fa {
+  color: var(--accent);
+  transition: color 100ms linear 0ms;
+  font-size: 12px;
+  margin: 0px 2px;
+}
+.widget-heading-icon .fa:hover {
+  color: var(--fg);
+}
+
+body {
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.ui-widget {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a.fa,
+i.fa {
+  font-size: 14px;
+}
+
+a {
+  color: var(--brand);
+}
+a:hover {
+  color: var(--branddark);
+}
+
+.header {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--fg) dd;
+}
+
+.footer {
+  background-color: var(--bgdarker);
+}
+.footer .text-muted {
+  color: var(--textdull);
+  transition: color 100ms linear 0ms;
+}
+.footer a {
+  color: var(--textdull);
+  transition: color 100ms linear 0ms;
+}
+.footer a:hover {
+  color: var(--brand);
+}
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  background-color: transparent;
+  /*border-bottom: 2px solid var(--bgdark); */
+  border-radius: 0px;
+  padding: 20px 5px 10px 0px;
+  margin-bottom: 0px;
+}
+
+.dropdown-menu {
+  background-color: var(--bgdarker);
+}
+
+.dropdown-menu > li > a {
+  padding: 3px 20px;
+}
+
+.divider {
+  background-color: var(--bgdark);
+}
+
+::placeholder {
+  color: var(--bglighter);
+}
+
+/* System > Advanced > System Tunables */
+caption {
+  background-color: var(--bg);
+  color: var(--fg);
+  padding: 10px 5px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+/* underline on the form control label */
+.element-required {
+  box-shadow: none;
+  font-weight: bold;
+}
+
+.icon-embed-btn {
+  padding-right: 16px;
+  padding-bottom: 13px;
+}
+
+/*
+    - &BGLighter     '#424450'
+    - &BGLight       '#343746' # HSV (230   , 25.71, 27.45)
+    - &BGDark        '#21222C' # HSV (234.55, 25   , 17.25)
+    - &BGDarker      '#191A21' # HSV (234.55, 25   , 13   )
+
+*/
+:root {
+  --fg: #f8f8f2;
+  --fgdull: #f8f8f2dd;
+  --bglighter: #424450;
+  --bglight: #343746;
+  --bg: #282a36;
+  --bgdark: #21222c;
+  --bgdarker: #191a21;
+  --textdull: #bcc2cd;
+  --selection: #44475a;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --cryandarker: #8be9fd0a;
+  --cyandark: #8be9fd88;
+  --green: #50fa7b;
+  --greendark: #50fa7bdd;
+  --red: #ff5555;
+  --reddarker: #ff55550a;
+  --reddark: #ff555588;
+  --yellow: #f1fa8c;
+  --orange: #ffb86c;
+  --orangedarker: #ffb86c0a;
+  --orangedark: #ffb86c88;
+  --purple: #bd93f9;
+  --pink: #ff79c6;
+  --pinkdark: #ff79c6aa;
+  --accent: var(--purple);
+  --brand: var(--pink);
+  --branddark: var(--pinkdark);
+}
