@@ -114,10 +114,19 @@ a:hover {
   color: #424450;
 }
 
+/* System > Advanced > System Tunables */
+caption {
+  background-color: #282a36;
+  color: #f8f8f2;
+  padding: 10px 5px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
 /* Multiple selects */
 option:checked {
   background: #44475a linear-gradient(0deg, #44475a 0%, #44475a 100%);
-  color: white;
+  color: #f8f8f2;
 }
 ::selection {
   background-color: #44475a;
@@ -135,16 +144,20 @@ option:checked {
   color: #f8f8f2dd;
   letter-spacing: 0px;
   padding-left: 5px;
+  margin-bottom: 10px;
 }
 
 div.panel-heading.ui-sortable-handle {
   padding: 5px 5px;
+  margin-bottom: 0px; /* on homepage we dont need spacing */
 }
 
 .panel-default {
   box-shadow: none;
   border: 0px solid #21222c;
   background-color: #21222c;
+  padding: 10px 5px;
+  border-radius: 5px;
 }
 
 .panel-body.collapse.in {
@@ -157,6 +170,12 @@ div.panel-heading.ui-sortable-handle {
   color: #bd93f9;
   padding: 0px 0px;
   font-size: 12px;
+}
+
+/* Diagnostics > pfInfo */
+.panel-body {
+  background-color: transparent;
+  border: none;
 }
 
 .widget-heading-icon .fa {
@@ -188,7 +207,9 @@ div.panel-heading.ui-sortable-handle {
   vertical-align: middle;
 }
 
-.table tbody th {
+/* thead shows up in System > Advanced > System Tunables */
+.table tbody th,
+.table thead th {
   vertical-align: middle;
 }
 
@@ -439,6 +460,7 @@ a.btn-primary:hover .fa {
 }
 .btn-success:hover {
   background-color: #50fa7bdd;
+  color: #000;
 }
 
 .btn-success:hover .fa:before,
