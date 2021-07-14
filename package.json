@@ -1,0 +1,26 @@
+{
+  "name": "pfsense-themes",
+  "version": "1.0.0",
+  "description": "Themes for pfSense",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffjose/pfsense-themes.git"
+  },
+  "keywords": [
+    "theme",
+    "router",
+    "firewall",
+    "themes",
+    "colors"
+  ],
+  "author": "Jeffrey Jose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffjose/pfsense-themes/issues"
+  },
+  "homepage": "https://github.com/jeffjose/pfsense-themes#readme"
+}
