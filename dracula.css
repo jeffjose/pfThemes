@@ -6,8 +6,6 @@
 
 */
 
-/* Navbar */
-
 :root {
   --fg: #f8f8f2;
   --fgdull: #f8f8f2dd;
@@ -49,6 +47,8 @@
   --brand: var(--pink);
   --branddark: var(--pinkdark);
 }
+
+/* Navbar */
 
 .navbar {
   margin-bottom: -10px;
