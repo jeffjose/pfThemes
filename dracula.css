@@ -114,6 +114,19 @@ a:hover {
   color: #424450;
 }
 
+/* Multiple selects */
+option:checked {
+  background: #44475a linear-gradient(0deg, #44475a 0%, #44475a 100%);
+  color: white;
+}
+::selection {
+  background-color: #44475a;
+}
+
+:focus-visible {
+  outline: none;
+}
+
 /***** Widgets on homepage ****/
 
 .panel-default > .panel-heading {
@@ -200,6 +213,18 @@ div.panel-heading.ui-sortable-handle {
   border: none;
 }
 
+/*table-condensed - used by wireguard*/
+table.table-condensed thead {
+  background-color: #191a21;
+}
+table.table-condensed tbody {
+  background-color: #282a36;
+}
+
+/* Only for peer entries table */
+.peer-entries table.table-condensed > tbody > tr:hover {
+  background-color: transparent;
+}
 /* Colors */
 .text-success {
   color: #50fa7b;
@@ -313,6 +338,14 @@ div.panel-heading.ui-sortable-handle {
   font-weight: bold;
 }
 
+/* the "/" in the subnet mask */
+.input-group-inbetween {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #f8f8f2;
+}
+
 input {
   transition: none;
 }
@@ -385,7 +418,16 @@ input:before {
 .btn-primary:hover:enabled .fa {
   color: #bd93f9;
 }
+/* Shows up in ART Table */
 a.btn-primary {
+  color: #f8f8f2;
+}
+
+a.btn-primary:hover {
+  color: #bd93f9;
+  border-color: #bd93f9;
+}
+a.btn-primary:hover .fa {
   color: #bd93f9;
 }
 
