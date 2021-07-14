@@ -85,6 +85,10 @@ nav.navbar.navbar-static-top.navbar-inverse {
   border: none;
 }
 
+.nav > li > a {
+  padding: 10px 10px;
+}
+
 /********/
 
 body {
@@ -334,6 +338,20 @@ table.table-condensed tbody {
 }
 
 /* pfSense logo */
+.navbar-brand svg#logo {
+  width: 60px;
+}
+
+.navbar-brand {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+  padding: 0px;
+  margin-right: 10px;
+}
+
 .logo-st0 {
   fill: var(--brand);
 }
@@ -556,6 +574,24 @@ button.close:hover span {
   border-radius: 6px;
   margin: 10px 0px;
 }
+/* links inside alerts */
+.alert a {
+  color: inherit;
+  font-weight: bold;
+}
+.alert a:hover {
+  text-decoration: underline;
+}
+
+/* close button inside alert */
+.alert button {
+  color: inherit;
+}
+
+.alert button span {
+  color: inherit;
+}
+
 .alert-info,
 .bg-info {
   background-color: var(--cryandarker);
