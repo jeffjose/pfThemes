@@ -7,6 +7,7 @@
 @use "./components/_text.scss";
 
 @use "./pages/status-dashboard.scss";
+@use "./pages/status-dhcp_leases.scss";
 @use "./pages/system-package_manager-installed_packages.scss";
 
 body {

@@ -10,7 +10,7 @@
 }
 
 div.panel-heading.ui-sortable-handle {
-  padding: 5px 5px;
+  padding: 0px 5px;
   margin-bottom: 0px;
 
   /* on homepage we dont need spacing */
@@ -20,12 +20,20 @@ div.panel-heading.ui-sortable-handle {
   box-shadow: none;
   border: 0px solid var(--bgdark);
   background-color: var(--bgdark);
-  padding: 10px 5px;
+  padding: 0px 5px;
   border-radius: 5px;
+
+  padding: 10px 5px 0 5px;
+
+  &::after {
+    height: 1px; // 0px completely gets rid of it, 1px does something. looks like a hack.
+    content: "";
+    display: block;
+  }
 }
 
 .panel-body.collapse.in {
-  padding-top: 10px;
+  //padding-top: 10px;
 }
 
 .panel-title {
@@ -42,6 +50,7 @@ div.panel-heading.ui-sortable-handle {
   color: var(--accent);
   padding: 0px 0px;
   font-size: 12px;
+  margin-bottom: 10px;
 }
 
 /* Diagnostics > pfInfo */
