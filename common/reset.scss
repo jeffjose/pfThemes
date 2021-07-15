@@ -1,12 +1,12 @@
-@use './_button.scss';
-@use './_table.scss';
-@use './_modal.scss';
-@use './_banner.scss';
-@use './_navbar.scss';
-@use './_form.scss';
-@use './_text.scss';
+@use "./components/_banner.scss";
+@use "./components/_button.scss";
+@use "./components/_form.scss";
+@use "./components/_modal.scss";
+@use "./components/_navbar.scss";
+@use "./components/_table.scss";
+@use "./components/_text.scss";
 
-@use './pages/homepage.scss';
+@use "./pages/homepage.scss";
 
 body {
   font-size: 12px;
