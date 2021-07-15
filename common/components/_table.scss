@@ -48,7 +48,10 @@ table[data-sortable].sortable-theme-bootstrap {
   }
 }
 
-.table-striped {
+// .table-hover is used by System > Advanced > System Tunables
+
+.table-striped,
+.table-hover {
   > tbody > tr {
     &:nth-of-type(odd) {
       background-color: var(--bgdark);
@@ -87,9 +90,9 @@ table[data-sortable].sortable-theme-bootstrap {
   }
 }
 
-/*table-condensed - used by wireguard*/
+/*table-hover - used by wireguard*/
 
-table.table-condensed {
+table.table-hover {
   thead {
     background-color: var(--bgdarker);
   }
@@ -101,6 +104,6 @@ table.table-condensed {
 
 /* Only for peer entries table */
 
-.peer-entries table.table-condensed > tbody > tr:hover {
+.peer-entries table.table-hover > tbody > tr:hover {
   background-color: transparent;
 }

@@ -31,8 +31,9 @@
 
 // Links and close-button inside alerts
 
-%buttonstyle {
+%banner-buttonstyle {
   button {
+    color: inherit;
     &:hover {
       span {
         color: inherit;
@@ -48,23 +49,29 @@
   box-shadow: none;
   border: 1px solid var(--cyandark);
   border-radius: 5px;
-  @extend %buttonstyle;
+  // Sometimes .alert is not added to the element class
+  // list (System > Package Manager) > Installed Packages, so have to do this
+  padding: 15px;
+
+  @extend %banner-buttonstyle;
 }
 
 .alert-danger {
   color: var(--red);
   background-color: var(--reddarker);
   border: 1px solid var(--reddark);
+  padding: 15px;
 
-  @extend %buttonstyle;
+  @extend %banner-buttonstyle;
 }
 
 .alert-warning {
   color: var(--orange);
   background-color: var(--orangedarker);
   border: 1px solid var(--orangedark);
+  padding: 15px;
 
-  @extend %buttonstyle;
+  @extend %banner-buttonstyle;
 }
 
 .help-block {
@@ -75,6 +82,9 @@
 #showinfo0,
 #showinfo1 {
   color: var(--cyan);
+  &:hover {
+    color: var(--cyandark);
+  }
 }
 
 // Callouts

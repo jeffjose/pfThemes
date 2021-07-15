@@ -1,5 +1,17 @@
 /* Modal */
 
+%modal-buttonstyle {
+  button {
+    color: inherit;
+    &:hover {
+      span {
+        opacity: 0.6;
+        color: inherit;
+      }
+    }
+  }
+}
+
 .modal-content {
   background-color: var(--bg);
   border-radius: 5px;
@@ -16,6 +28,8 @@
 .modal-header {
   background-color: transparent;
   color: var(--accent);
+
+  @extend %modal-buttonstyle;
 }
 
 .modal-footer {
