@@ -61,3 +61,9 @@ div.panel-heading.ui-sortable-handle {
     color: var(--fg);
   }
 }
+
+// Services Status Widget
+// Bring some space between the restart/stop icons
+#widget-services_status-0 tbody .fa {
+  margin-left: 5px;
+}

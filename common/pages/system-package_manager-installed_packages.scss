@@ -1,0 +1,35 @@
+/* System > Package Manager > Installed Packages */
+
+#pkgtbl > .table-responsive > table.table > tbody {
+  // Column 1: Check mark
+  td:nth-child(1) {
+    color: var(--green);
+  }
+
+  // Column 2: Name
+  td:nth-child(2) {
+    //pass
+  }
+
+  // Column 3: Category
+  td:nth-child(3) {
+  }
+
+  // Column 4: Version
+  td:nth-child(4) {
+  }
+
+  // Column 5: Description
+  td:nth-child(5) {
+  }
+
+  // Column 6: Actions
+  td:nth-child(6) {
+    display: flex;
+
+    a {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  }
+}

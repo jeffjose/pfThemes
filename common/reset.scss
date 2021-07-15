@@ -6,7 +6,8 @@
 @use "./components/_table.scss";
 @use "./components/_text.scss";
 
-@use "./pages/homepage.scss";
+@use "./pages/status-dashboard.scss";
+@use "./pages/system-package_manager-installed_packages.scss";
 
 body {
   font-size: 12px;
@@ -24,6 +25,7 @@ body {
 a.fa,
 i.fa {
   font-size: 14px;
+  opacity: 0.8;
 }
 
 a {
@@ -111,4 +113,12 @@ caption {
 .icon-embed-btn {
   padding-right: 16px;
   padding-bottom: 13px;
+}
+
+.progress {
+  background-color: var(--bgdarker);
+}
+.progress-bar {
+  background-color: var(--green);
+  opacity: 0.8;
 }
