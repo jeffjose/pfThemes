@@ -89,22 +89,53 @@
 
 // Callouts
 
-@mixin bs-callout-mixin($color) {
-  border-left-color: var($color);
+@mixin bs-callout-mixin($color, $colordark, $colordarker) {
+  border-left-color: $color;
+  color: $color;
+
+  background-color: $colordarker;
+  border-top: 1px solid $colordark;
+  border-bottom: 1px solid $colordark;
+  border-right: 1px solid $colordark;
 
   h4 {
     color: $color;
   }
+
+  br {
+    display: none;
+  }
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+
+  //  For Firewall > pfBlockerNG > Sync
+  strong {
+    font-weight: normal;
+  }
 }
 
 .bs-callout-danger {
-  @include bs-callout-mixin(var(--red));
+  @include bs-callout-mixin(var(--red), var(--reddark), var(--reddarker));
 }
 
 .bs-callout-info {
-  @include bs-callout-mixin(var(--cyan));
+  @include bs-callout-mixin(var(--cyan), var(--cyandark), var(--cryandarker));
 }
 
-.bs-warning-info {
-  @include bs-callout-mixin(var(--orange));
+.bs-callout-warning {
+  @include bs-callout-mixin(
+    var(--orange),
+    var(--orangedark),
+    var(--orangedarker)
+  );
 }

@@ -72,3 +72,14 @@ div.panel-heading.ui-sortable-handle {
 #widget-services_status-0 tbody .fa {
   margin-left: 5px;
 }
+
+// System Information Widget
+#updatestatus {
+  .fa.fa-cloud-download {
+    color: var(--green);
+    margin-left: 5px;
+    &:hover {
+      color: var(--greendark);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/* Firewall > pfBlockerNG */
+
+// Target the "Run" button's parent
+div.container.static
+  > form
+  > div:nth-child(2)
+  > div.panel-body
+  > div:nth-child(6)
+  > div
+  > div:nth-child(1) {
+  margin-right: 10px;
+}
+
+// Target the [select] [label] group
+.checkbox.col-sm-1 .chkboxlbl {
+  display: flex;
+  gap: 5px;
+  padding-left: 0px;
+
+  input {
+    margin: 3px; // To align radio-button with label
+  }
+}
+
+.bs-callout.bs-callout-info,
+.bs-callout.bs-callout-warning {
+  //  For Firewall > pfBlockerNG > Sync
+  strong {
+    font-weight: normal;
+  }
+
+  br {
+    display: none;
+  }
+}
