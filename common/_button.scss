@@ -36,7 +36,7 @@
   }
 }
 
-/* primary button */
+// Primary button
 
 .btn-primary:hover:enabled {
   border-color: var(--accent);
@@ -47,7 +47,7 @@
   }
 }
 
-/* Shows up in ART Table */
+// Shows up in ART Table
 
 a.btn-primary {
   color: var(--fg);
@@ -62,7 +62,7 @@ a.btn-primary {
   }
 }
 
-/* success button */
+//Success button
 
 .btn-success {
   background-color: var(--green);
@@ -89,7 +89,7 @@ a.btn-primary {
   }
 }
 
-/* danger button */
+// Danger button
 
 .btn-danger {
   color: var(--red);
@@ -108,7 +108,7 @@ a.btn-primary {
   }
 }
 
-/* Info button */
+// Info button
 
 .btn-info:hover {
   border-color: var(--accent);
@@ -123,7 +123,7 @@ a.btn-info {
   color: var(--fg);
 }
 
-/* warning button */
+// Warning button
 
 .btn-warning {
   color: var(--orange);

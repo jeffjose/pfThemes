@@ -33,6 +33,10 @@ div.panel-heading.ui-sortable-handle {
     color: var(--accent);
     padding: 0px 0px;
     font-size: 12px;
+
+    &:hover {
+      color: var(--accentdark);
+    }
   }
 
   color: var(--accent);

@@ -19,13 +19,27 @@
 
     span {
       color: inherit;
+      opacity: 0.6;
+
+      &:hover {
+        color: inherit;
+        opacity: 1;
+      }
     }
   }
 }
 
-/* links inside alerts */
+// Links and close-button inside alerts
 
-/* close button inside alert */
+%buttonstyle {
+  button {
+    &:hover {
+      span {
+        color: inherit;
+      }
+    }
+  }
+}
 
 .alert-info,
 .bg-info {
@@ -34,51 +48,53 @@
   box-shadow: none;
   border: 1px solid var(--cyandark);
   border-radius: 5px;
+  @extend %buttonstyle;
 }
 
 .alert-danger {
   color: var(--red);
   background-color: var(--reddarker);
   border: 1px solid var(--reddark);
+
+  @extend %buttonstyle;
 }
 
 .alert-warning {
   color: var(--orange);
   background-color: var(--orangedarker);
   border: 1px solid var(--orangedark);
+
+  @extend %buttonstyle;
 }
 
 .help-block {
   color: var(--textdull);
 }
 
-/* blue i */
-
+// The blue "i"
 #showinfo0,
 #showinfo1 {
   color: var(--cyan);
 }
 
-.bs-callout-danger {
-  border-left-color: var(--red);
+// Callouts
+
+@mixin bs-callout-mixin($color) {
+  border-left-color: var($color);
 
   h4 {
-    color: var(--red);
+    color: $color;
   }
+}
+
+.bs-callout-danger {
+  @include bs-callout-mixin(var(--red));
 }
 
 .bs-callout-info {
-  border-left-color: var(--cyan);
-
-  h4 {
-    color: var(--cyan);
-  }
+  @include bs-callout-mixin(var(--cyan));
 }
 
 .bs-warning-info {
-  border-left-color: var(--orange);
-
-  h4 {
-    color: var(--orange);
-  }
+  @include bs-callout-mixin(var(--orange));
 }
