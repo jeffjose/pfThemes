@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<pfsensepkgs>
+	<package>
+		<name>Themes</name>
+    <descr><![CDATA[A utility to discover and manage themes for pfSense]]></descr>
+		<version>%%PKGVERSION%%</version>
+		<configurationfile>themes.xml</configurationfile>
+	</package>
+</pfsensepkgs>
