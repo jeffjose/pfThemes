@@ -10,6 +10,8 @@
 @use "./pages/status-dhcp_leases.scss";
 @use "./pages/status-system_logs-firewall.scss";
 @use "./pages/firewall-pfblockerng.scss";
+@use "./pages/firewall-aliases-ports.scss";
+@use "./pages/interfaces-interfaces_assignments.scss";
 @use "./pages/system-package_manager-installed_packages.scss";
 
 body {

@@ -83,3 +83,11 @@ div.panel-heading.ui-sortable-handle {
     }
   }
 }
+
+// Netgate Services and Support
+#widget-netgate_services_and_support-0_panel-body {
+  span[style] {
+    // There's an inline style, so lets target it.
+    color: inherit;
+  }
+}
