@@ -21,15 +21,3 @@ div.container.static
     margin: 3px; // To align radio-button with label
   }
 }
-
-.bs-callout.bs-callout-info,
-.bs-callout.bs-callout-warning {
-  //  For Firewall > pfBlockerNG > Sync
-  strong {
-    font-weight: normal;
-  }
-
-  br {
-    display: none;
-  }
-}
