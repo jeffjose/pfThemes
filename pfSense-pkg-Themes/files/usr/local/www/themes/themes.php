@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE packagegui SYSTEM "../schema/packages.dtd">
-<?xml-stylesheet type="text/xsl" href="../xsl/package.xsl"?>
-<packagegui>
-	<copyright>
-	<![CDATA[
+<?php
 /*
- * themes.xml
+ * themes.php
  *
  * part of pfSense (https://www.pfsense.org)
- * Copyright (c) 2021 Jeffrey Jose
+ * Copyright (c) 2021 Rubicon Communications, LLC (Netgate)
+ * Copyright (c) 2021 Jeffrey Jose (jeffreyjose.com)
  * All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,14 +19,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-	]]>
-	</copyright>
-	<name>themes</name>
-	<version>%%PKGVERSION%%</version>
-	<title>System/Themes</title>
-	<menu>
-		<name>Themes</name>
-		<section>System</section>
-		<url>/index.php</url>
-	</menu>
-</packagegui>
+
+// pfSense includes
+require_once('util.inc');
+require_once('guiconfig.inc');
+
+$pgtitle = array(gettext('System'), gettext('Themes'));
+include_once("head.inc");
+
+?>

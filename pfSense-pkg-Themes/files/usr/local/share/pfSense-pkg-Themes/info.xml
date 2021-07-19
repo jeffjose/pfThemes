@@ -2,7 +2,10 @@
 <pfsensepkgs>
 	<package>
 		<name>Themes</name>
+		<internal_name>themes</internal_name>
     <descr><![CDATA[A utility to discover and manage themes for pfSense]]></descr>
+		<website>https://github.com/jeffjose/pfSense-pkg-themes</website> 
+		<category>System</category>
 		<version>%%PKGVERSION%%</version>
 		<configurationfile>themes.xml</configurationfile>
 	</package>

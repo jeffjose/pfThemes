@@ -1,8 +1,10 @@
 <?php
 /*
- * index.php
+ * themes.priv.inc
+ * 
  *
  * part of pfSense (https://www.pfsense.org)
+ * Copyright (c) 2021 Rubicon Communications, LLC (Netgate)
  * Copyright (c) 2021 Jeffrey Jose (jeffreyjose.com)
  * All rights reserved.
  *
@@ -19,17 +21,12 @@
  * limitations under the License.
  */
 
-##|+PRIV
-##|*IDENT=page-system-themes
-##|*NAME=System: Themes: Manager
-##|*DESCR=Manage pfSense themes
-##|*MATCH=index.php*
-##|-PRIV
+global $priv_list;
 
-// pfSense includes
-require_once('functions.inc');
-require_once('guiconfig.inc');
-
-<h1>Hello World!</h1>
+$priv_list['page-system-themes'] = array();
+$priv_list['page-system-themes']['name'] = "WebCfg - System: Themes";
+$priv_list['page-system-themes']['descr'] = "Allow access to the 'System: Themes' page.";
+$priv_list['page-system-themes']['match'] = array();
+$priv_list['page-system-themes']['match'][] = "/themes/themes.php";
 
 ?>

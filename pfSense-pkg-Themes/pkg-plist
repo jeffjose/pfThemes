@@ -1,0 +1,13 @@
+@dir /usr/local/pkg
+/usr/local/pkg/themes.xml
+
+@dir /etc/inc/priv
+/etc/inc/priv/themes.priv.inc
+
+@dir /usr/local/www/themes
+/usr/local/www/themes/themes.php
+
+@dir /etc/inc/themes
+/etc/inc/themes/themes.inc
+
+%%DATADIR%%/info.xml
