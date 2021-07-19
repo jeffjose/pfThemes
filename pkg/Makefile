@@ -23,27 +23,25 @@ do-extract:
 	${MKDIR} ${WRKSRC}
 
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/pkg
 	${MKDIR} ${STAGEDIR}/etc/inc/priv
-	${MKDIR} ${STAGEDIR}${PREFIX}/www/packages/themes
+
+	${MKDIR} ${STAGEDIR}${PREFIX}/pkg
+	${MKDIR} ${STAGEDIR}${PREFIX}/www
+
 	${MKDIR} ${STAGEDIR}${DATADIR}
-#	${INSTALL_DATA} -m 0644 ${FILESDIR}${PREFIX}/pkg/cron.xml \
-#		${STAGEDIR}${PREFIX}/pkg
-#	${INSTALL_DATA} ${FILESDIR}${PREFIX}/pkg/cron.xml \
-#		${STAGEDIR}${PREFIX}/pkg
-#	${INSTALL_DATA} ${FILESDIR}${PREFIX}/pkg/cron.inc \
-#		${STAGEDIR}${PREFIX}/pkg
-#	${INSTALL_DATA} ${FILESDIR}/etc/inc/priv/cron.priv.inc \
-#		${STAGEDIR}/etc/inc/priv
-#	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/packages/cron/cron.php \
-#		${STAGEDIR}${PREFIX}/www/packages/cron
-#	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/packages/cron/cron_edit.php \
-#		${STAGEDIR}${PREFIX}/www/packages/cron
-#	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/packages/cron/index.php \
-#		${STAGEDIR}${PREFIX}/www/packages/cron
+
+	${INSTALL_DATA} ${FILESDIR}${PREFIX}/pkg/*.xml \
+		${STAGEDIR}${PREFIX}/pkg
+
+	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/*.php \
+		${STAGEDIR}${PREFIX}/www
+
 	${INSTALL_DATA} ${FILESDIR}${DATADIR}/info.xml \
 		${STAGEDIR}${DATADIR}
+
 	@${REINPLACE_CMD} -i '' -e "s|%%PKGVERSION%%|${PKGVERSION}|" \
-		${STAGEDIR}${DATADIR}/info.xml
+		${STAGEDIR}${DATADIR}/info.xml \
+		${STAGEDIR}${PREFIX}/pkg/themes.xml
+
 
 .include <bsd.port.mk>
