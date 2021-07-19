@@ -30,6 +30,10 @@
     color: var(--fg);
   }
 
+  &:focus {
+    outline: none;
+  }
+
   .fa {
     transition: all linear 100ms;
     margin-right: 5px;
