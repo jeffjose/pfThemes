@@ -31,3 +31,5 @@ require_once('functions.inc');
 require_once('guiconfig.inc');
 
 <h1>Hello World!</h1>
+
+?>
