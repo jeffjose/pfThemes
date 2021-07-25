@@ -21,10 +21,12 @@
  */
 
 // pfSense includes
-require_once('util.inc');
 require_once('guiconfig.inc');
 
 $pgtitle = array(gettext('System'), gettext('Themes'));
-include_once("head.inc");
+include("head.inc");
 
+?>
+<?php
+include("foot.inc");
 ?>
