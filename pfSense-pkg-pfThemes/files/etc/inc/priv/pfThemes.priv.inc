@@ -1,6 +1,6 @@
 <?php
 /*
- * themes.priv.inc
+ * pfThemes.priv.inc
  * 
  *
  * part of pfSense (https://www.pfsense.org)
@@ -23,10 +23,10 @@
 
 global $priv_list;
 
-$priv_list['page-system-themes'] = array();
-$priv_list['page-system-themes']['name'] = "WebCfg - System: Themes";
-$priv_list['page-system-themes']['descr'] = "Allow access to the 'System: Themes' page.";
-$priv_list['page-system-themes']['match'] = array();
-$priv_list['page-system-themes']['match'][] = "/themes/themes.php";
+$priv_list['page-system-pfthemes'] = array();
+$priv_list['page-system-pfthemes']['name'] = "WebCfg - System: pfThemes";
+$priv_list['page-system-pfthemes']['descr'] = "Allow access to the 'System: pfThemes' page.";
+$priv_list['page-system-pfthemes']['match'] = array();
+$priv_list['page-system-pfthemes']['match'][] = "/pfThemes/pfThemes.php";
 
 ?>

@@ -1,6 +1,6 @@
 # $FreeBSD$
 
-PORTNAME=	pfSense-pkg-Themes
+PORTNAME=	pfSense-pkg-pfThemes
 PORTVERSION=	0.0.1
 PORTREVISION=	1
 CATEGORIES=	sysutils
@@ -24,23 +24,23 @@ do-extract:
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/pkg
-	${INSTALL_DATA} -m 0644 ${FILESDIR}${PREFIX}/pkg/themes.xml \
+	${INSTALL_DATA} -m 0644 ${FILESDIR}${PREFIX}/pkg/pfThemes.xml \
 		${STAGEDIR}${PREFIX}/pkg
 
 
 	${MKDIR} ${STAGEDIR}/etc/inc/priv
-	${INSTALL_DATA} ${FILESDIR}/etc/inc/priv/themes.priv.inc \
+	${INSTALL_DATA} ${FILESDIR}/etc/inc/priv/pfThemes.priv.inc \
 		${STAGEDIR}/etc/inc/priv
 
 
 	${MKDIR} ${STAGEDIR}${PREFIX}/www
-	${MKDIR} ${STAGEDIR}${PREFIX}/www/themes
-	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/themes/*.php \
-		${STAGEDIR}${PREFIX}/www/themes
+	${MKDIR} ${STAGEDIR}${PREFIX}/www/pfThemes
+	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/pfThemes/*.php \
+		${STAGEDIR}${PREFIX}/www/pfThemes
 
-	${MKDIR} ${STAGEDIR}/etc/inc/themes
-	${INSTALL_DATA} ${FILESDIR}/etc/inc/themes/*.inc \
-		${STAGEDIR}/etc/inc/themes
+	${MKDIR} ${STAGEDIR}/etc/inc/pfThemes
+	${INSTALL_DATA} ${FILESDIR}/etc/inc/pfThemes/*.inc \
+		${STAGEDIR}/etc/inc/pfThemes
 
 
 	${MKDIR} ${STAGEDIR}${DATADIR}

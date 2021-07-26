@@ -1,0 +1,13 @@
+@dir /usr/local/pkg
+/usr/local/pkg/pfThemes.xml
+
+@dir /etc/inc/priv
+/etc/inc/priv/pfThemes.priv.inc
+
+@dir /usr/local/www/pfThemes
+/usr/local/www/pfThemes/pfThemes.php
+
+@dir /etc/inc/pfThemes
+/etc/inc/pfThemes/pfThemes.inc
+
+%%DATADIR%%/info.xml

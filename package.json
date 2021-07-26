@@ -1,5 +1,5 @@
 {
-  "name": "pfsense-themes",
+  "name": "pfThemes",
   "version": "1.0.0",
   "description": "Themes for pfSense",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeffjose/pfsense-themes.git"
+    "url": "git+https://github.com/jeffjose/pfThemes.git"
   },
   "keywords": [
     "theme",
@@ -22,8 +22,8 @@
   "author": "Jeffrey Jose",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jeffjose/pfsense-themes/issues"
+    "url": "https://github.com/jeffjose/pfThemes/issues"
   },
-  "homepage": "https://github.com/jeffjose/pfsense-themes#readme",
+  "homepage": "https://github.com/jeffjose/pfThemes#readme",
   "dependencies": {}
 }

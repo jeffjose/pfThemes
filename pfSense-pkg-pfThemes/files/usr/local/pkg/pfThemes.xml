@@ -24,12 +24,12 @@
 	]]>
 	</copyright>
 	<description>Theme manager for pfSense</description>
-	<name>Themes</name>
-	<title>System: Themes</title>
+	<name>pfThemes</name>
+	<title>System: pfThemes</title>
 	<menu>
-        <name>Themes</name>
+        <name>pfThemes</name>
         <tooltiptext>Theme manager for pfSense</tooltiptext>
         <section>System</section>
-        <url>/themes/themes.php</url>
+        <url>/pfThemes/pfThemes.php</url>
 	</menu>
 </packagegui>

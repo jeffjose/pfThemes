@@ -1,6 +1,6 @@
 <?php
 /*
- * themes.php
+ * pfThemes.php
  *
  * part of pfSense (https://www.pfsense.org)
  * Copyright (c) 2021 Rubicon Communications, LLC (Netgate)
@@ -23,7 +23,7 @@
 // pfSense includes
 require_once('guiconfig.inc');
 
-$pgtitle = array(gettext('System'), gettext('Themes'));
+$pgtitle = array(gettext('System'), gettext('pfThemes'));
 include("head.inc");
 
 ?>
