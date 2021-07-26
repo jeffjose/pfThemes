@@ -6,13 +6,6 @@ import Counter from '../components/Counter.svelte'
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
     <style>
       :global(:root) {
         font-family: system-ui;
@@ -31,12 +24,8 @@ import Counter from '../components/Counter.svelte'
         margin-bottom: 2em;
       }
     </style>
-  </head>
-  <body>
     <main>
       <Counter client:visible>
         <h1>Hello Svelte!</h1>
       </Counter>
     </main>
-  </body>
-</html>
