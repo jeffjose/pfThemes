@@ -23,7 +23,7 @@
 // pfSense includes
 require_once('guiconfig.inc');
 
-$pgtitle = array(gettext('System'), gettext('pfThemes'));
+$pgtitle = array(gettext('System'), gettext('Themes'));
 include("head.inc");
 
 ?>

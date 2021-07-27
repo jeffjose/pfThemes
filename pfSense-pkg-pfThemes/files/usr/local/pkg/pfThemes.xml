@@ -27,7 +27,7 @@
 	<name>pfThemes</name>
 	<title>System: pfThemes</title>
 	<menu>
-        <name>pfThemes</name>
+        <name>Themes</name>
         <tooltiptext>Theme manager for pfSense</tooltiptext>
         <section>System</section>
         <url>/pfThemes/pfThemes.php</url>
