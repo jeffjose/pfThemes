@@ -18,10 +18,10 @@
     unified "^9.2.1"
     unist-util-map "^3.0.0"
 
-"@astrojs/parser@0.18.0-next.5":
-  version "0.18.0-next.5"
-  resolved "https://registry.yarnpkg.com/@astrojs/parser/-/parser-0.18.0-next.5.tgz#2eea5ebefbef7efec86436535d514eb6cc58b730"
-  integrity sha512-8ZRB2kNECy+c0hLGWl+MJHqAfmLl11Jxp5fNQr88C7o1eMp8m6T+uWBvjhSSrgfqdviN40Lmqjex16WturOkUQ==
+"@astrojs/parser@0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/parser/-/parser-0.18.0.tgz#406c187939af52adb9bc7165ff326e6ac9d31393"
+  integrity sha512-8QA+CnUA4xuOeRLXlyxSYUbm9mz+/LZh5yzjioXaWodo4ThnG1MwwKRFsQCUUnXkD2iYRWiJPPkMcYgZ5Yow+A==
   dependencies:
     acorn "^7.4.0"
     locate-character "^2.0.5"
@@ -32,19 +32,19 @@
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-0.2.2.tgz#6f23c3922df2ca0bce0362ee48d13b0820b09bb3"
   integrity sha512-STrtNBw7MSaf9RfSdQDqW38p3GrIfNZEZvLgEyWqlEeafUxtF783L2PDLW3nBUyIsY6GZvQd5jq19NpGrhSWLw==
 
-"@astrojs/renderer-preact@0.2.0-next.0":
-  version "0.2.0-next.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/renderer-preact/-/renderer-preact-0.2.0-next.0.tgz#7cf5a3a38a382354780b274294acb330764f2a7c"
-  integrity sha512-cx6NGimg9VN0+Eao4JDXTQRIMTjtuS8uC6mg9gbNi2jgBHyXntRHMn5xqmHSOKzUR3MEGcY9fYndoF4Py6NfhQ==
+"@astrojs/renderer-preact@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/renderer-preact/-/renderer-preact-0.2.0.tgz#f1a512396f8930129cece1adbb1d225703287695"
+  integrity sha512-fiO7q4Temi/5PIAA8VVqnuBjEoaCFFunjqCGl7+8OLjs4KIcBBW5Mfk3Ejcu/mc1zmcL/yuOBlzLMX4sPPPh2Q==
   dependencies:
     "@babel/plugin-transform-react-jsx" "^7.14.5"
     preact "^10.5.13"
     preact-render-to-string "^5.1.18"
 
-"@astrojs/renderer-react@0.2.0-next.0":
-  version "0.2.0-next.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/renderer-react/-/renderer-react-0.2.0-next.0.tgz#d743170b8ebb805a86c7d46fb862e9b27aa3932c"
-  integrity sha512-fHAuo107XEbspJLAxXMqX/ajelnmiqxPJn5xvB7FLXxlU1KpHoCP2V8naaXdjHdHvGqN34AwZTonkh8pORX63g==
+"@astrojs/renderer-react@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/renderer-react/-/renderer-react-0.2.0.tgz#1a033744186562559c17406e943d07323d71e9e9"
+  integrity sha512-xMF991MMCzMQkIGu/lazO9nwz5SWGZ93h/guC84DV/oIeiPAEIfCnO8cTCqFAgzv9Gti9TovR4RX+jReYRqpGA==
   dependencies:
     "@babel/plugin-transform-react-jsx" "^7.14.5"
     react "^17.0.2"
@@ -58,10 +58,10 @@
     "@snowpack/plugin-svelte" "^3.7.0"
     svelte "^3.35.0"
 
-"@astrojs/renderer-vue@0.1.4-next.0":
-  version "0.1.4-next.0"
-  resolved "https://registry.yarnpkg.com/@astrojs/renderer-vue/-/renderer-vue-0.1.4-next.0.tgz#d63fd290ed0c23f375334104c41f5c323a01eaed"
-  integrity sha512-WN37M76I1QzwtY4cd7DkLMSPGkdCqmSHtdpEFekm11/JQmVyAhWs7Y6pdCKAdaZlHwVejaeI9BH0tEIc1CJFEw==
+"@astrojs/renderer-vue@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/renderer-vue/-/renderer-vue-0.1.4.tgz#28739fdc2b2093efdbf245a5c561b350d3a60e2f"
+  integrity sha512-OkFk5/uBdoXe20Ue3PJSlgB8dRRHUDRkrMpWW+gumy7W1LW95EPpKzFh2PWphqdye+IZJQ8vaARauAq88LineA==
   dependencies:
     "@snowpack/plugin-vue" "^2.6.1"
     "@vue/server-renderer" "^3.0.10"
@@ -318,9 +318,9 @@
     fastq "^1.6.0"
 
 "@npmcli/arborist@^2.6.4":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-2.7.1.tgz#dc7b8a75d7469c26559675adbccae26cfcbe2d01"
-  integrity sha512-EGDHJs6dna/52BrStr/6aaRcMLrYxGbSjT4V3JzvoTBY9/w5i2+1KNepmsG80CAsGADdo6nuNnFwb7sDRm8ZAw==
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-2.8.0.tgz#ff078287eba44595383eb58ad8aa8540bc8aae9e"
+  integrity sha512-R9rTyak1rGdmVTyiU14dgBb+qMllY3B6I8hp7FB4xXsU9dJDrYZJR8I+191CMo5Y1941jTDCtNcXXW9TldPEFQ==
   dependencies:
     "@npmcli/installed-package-contents" "^1.0.7"
     "@npmcli/map-workspaces" "^1.0.2"
@@ -338,10 +338,10 @@
     mkdirp "^1.0.4"
     mkdirp-infer-owner "^2.0.0"
     npm-install-checks "^4.0.0"
-    npm-package-arg "^8.1.0"
+    npm-package-arg "^8.1.5"
     npm-pick-manifest "^6.1.0"
     npm-registry-fetch "^11.0.0"
-    pacote "^11.2.6"
+    pacote "^11.3.5"
     parse-conflict-json "^1.1.1"
     proc-log "^1.0.0"
     promise-all-reject-late "^1.0.0"
@@ -891,18 +891,18 @@ astring@^1.7.4:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.7.5.tgz#a7d47fceaf32b052d33a3d07c511efeec67447ca"
   integrity sha512-lobf6RWXb8c4uZ7Mdq0U12efYmpD1UFnyOWVJPTa3ukqZrMopav+2hdNu0hgBF0JIBFK9QgrBDfwYvh3DFJDAA==
 
-astro@^0.18.0-next.6:
-  version "0.18.0-next.6"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-0.18.0-next.6.tgz#a936d1bedad36ee3b0b0caefa6d99c6b899a3a23"
-  integrity sha512-wVuuWuJ5TC1LaL2Y2mJ7AUfhYLO832BdOhYQ4pdrSAtynldh2xJXdlZ3NL3MEx87W+u8zy6u8rIjbQ0Hg41N2g==
+astro@^0.18.1:
+  version "0.18.1"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-0.18.1.tgz#9c8524061e4035cd029ef1c6cc90208b216c8261"
+  integrity sha512-nMSjtTZqgZG7TSOt7ea0QKJERoMib+Z73JGYAjLVo9ByJSB/WfjIR/5VjMs1yusdYyjpsV9pKH9ylral87kMmg==
   dependencies:
     "@astrojs/markdown-support" "0.2.0"
-    "@astrojs/parser" "0.18.0-next.5"
+    "@astrojs/parser" "0.18.0"
     "@astrojs/prism" "0.2.2"
-    "@astrojs/renderer-preact" "0.2.0-next.0"
-    "@astrojs/renderer-react" "0.2.0-next.0"
+    "@astrojs/renderer-preact" "0.2.0"
+    "@astrojs/renderer-react" "0.2.0"
     "@astrojs/renderer-svelte" "0.1.1"
-    "@astrojs/renderer-vue" "0.1.4-next.0"
+    "@astrojs/renderer-vue" "0.1.4"
     "@babel/code-frame" "^7.12.13"
     "@babel/core" "^7.14.6"
     "@babel/generator" "^7.13.9"
@@ -1557,9 +1557,9 @@ ecc-jsbn@~0.1.1:
     safer-buffer "^2.1.0"
 
 electron-to-chromium@^1.3.723:
-  version "1.3.787"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.787.tgz#0d814dcc374bb8a0ae7a17c0308c39fb18fcc7bb"
-  integrity sha512-zeM5AFwvTlSYvGpBaFZKVo7GQEWSk6hS3rQ7mdrr3qB7CiqVl84K6nIPznyKSu0b8ABiEeMEIqyBuzqMkxnjjg==
+  version "1.3.788"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.788.tgz#7a304c8ebb11d30916a1a1c1b4a9bad3983ef232"
+  integrity sha512-dbMIpX4E4/Gk4gzOh1GYS7ls1vGsByWKpIqLviJi1mSmSt5BvrWLLtSqpFE5BaC7Ef4NnI0GMaiddNX2Brw6zA==
 
 emoji-regex@^9.2.2:
   version "9.2.2"
@@ -2965,22 +2965,17 @@ micromatch@^4.0.4:
     braces "^3.0.1"
     picomatch "^2.2.3"
 
-mime-db@1.48.0:
-  version "1.48.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.48.0.tgz#e35b31045dd7eada3aaad537ed88a33afbef2d1d"
-  integrity sha512-FM3QwxV+TnZYQ2aRqhlKBMHxk10lTbMt3bBkMAp54ddrNeVSfcQYOOKuGuy3Ddrm38I04If834fOUSq1yzslJQ==
-
-"mime-db@>= 1.43.0 < 2":
+mime-db@1.49.0, "mime-db@>= 1.43.0 < 2":
   version "1.49.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.49.0.tgz#f3dfde60c99e9cf3bc9701d687778f537001cbed"
   integrity sha512-CIc8j9URtOVApSFCQIF+VBkX1RwXp/oMMOrqdyXSBXq5RWNEsRfyj1kiRnQgmNXmHxPoFIxOroKA3zcU9P+nAA==
 
 mime-types@^2.1.12, mime-types@^2.1.26, mime-types@~2.1.19:
-  version "2.1.31"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.31.tgz#a00d76b74317c61f9c2db2218b8e9f8e9c5c9e6b"
-  integrity sha512-XGZnNzm3QvgKxa8dpzyhFTHmpP3l5YNusmne07VUOXxou9CqUqYa/HBy124RqtVh/O2pECas/MOcsDgpilPOPg==
+  version "2.1.32"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.32.tgz#1d00e89e7de7fe02008db61001d9e02852670fd5"
+  integrity sha512-hJGaVS4G4c9TSMYh2n6SQAGrC4RnfU+daP8G7cSCmaqNjiOoUY0VHCMS42pxnQmVF1GWwFhbHWn3RIxCqTmZ9A==
   dependencies:
-    mime-db "1.48.0"
+    mime-db "1.49.0"
 
 mime@^2.5.2:
   version "2.5.2"
@@ -3213,7 +3208,7 @@ npm-normalize-package-bin@^1.0.0, npm-normalize-package-bin@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-normalize-package-bin/-/npm-normalize-package-bin-1.0.1.tgz#6e79a41f23fd235c0623218228da7d9c23b8f6e2"
   integrity sha512-EPfafl6JL5/rU+ot6P3gRSCpPDW5VmIzX959Ob1+ySFUuuYHWHekXpwdUZcKP5C+DS4GEtdJluwBjnsNDl+fSA==
 
-npm-package-arg@^8.0.0, npm-package-arg@^8.0.1, npm-package-arg@^8.1.0, npm-package-arg@^8.1.2:
+npm-package-arg@^8.0.0, npm-package-arg@^8.0.1, npm-package-arg@^8.1.2, npm-package-arg@^8.1.5:
   version "8.1.5"
   resolved "https://registry.yarnpkg.com/npm-package-arg/-/npm-package-arg-8.1.5.tgz#3369b2d5fe8fdc674baa7f1786514ddc15466e44"
   integrity sha512-LhgZrg0n0VgvzVdSm1oiZworPbTxYHUJCgtsJW8mGvlDpxTM1vSJc3m5QZeUkhAHIzbz3VCHd/R4osi1L1Tg/Q==
@@ -3393,7 +3388,7 @@ p-try@^2.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
-pacote@^11.1.11, pacote@^11.2.6, pacote@^11.3.4:
+pacote@^11.1.11, pacote@^11.3.4, pacote@^11.3.5:
   version "11.3.5"
   resolved "https://registry.yarnpkg.com/pacote/-/pacote-11.3.5.tgz#73cf1fc3772b533f575e39efa96c50be8c3dc9d2"
   integrity sha512-fT375Yczn4zi+6Hkk2TBe1x1sP8FgFsEIZ2/iWaXY2r/NkhDJfxbcn5paz1+RTFCyNf+dPnaoBDJoAxXSU8Bkg==
@@ -4387,15 +4382,15 @@ svelte-preprocess@^4.7.2:
     detect-indent "^6.0.0"
     strip-indent "^3.0.0"
 
-svelte@^3.35.0, svelte@^3.40.2:
-  version "3.40.3"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.40.3.tgz#f7ac3a159f3e4a5a55c6a710e69c0313ef33b414"
-  integrity sha512-aSZcouFacOKL/lOTzOOtDJcMbgkjaRvRptWJb0XcyFg2qYvO3IwcYeqtW5BuCJzYciiXKmNsqrp1CzsPt09xbA==
+svelte@^3.35.0, svelte@^3.41.0:
+  version "3.41.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.41.0.tgz#2009fd6681453ffb8b5aaa57f4a89a8be3dedd78"
+  integrity sha512-X9/lnTcRBCrMdyFBVjfmqy1T2vyN8ejUE1OfbWSccc2Z42Amn3ab3XdBgVl+oDkZvzPfPMoxo6CEbWca7pXOew==
 
 tar@^6.0.2, tar@^6.1.0:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.1.tgz#4d7da4b132b334bb8c175ed1de466fe9157ea0eb"
-  integrity sha512-GG0R7yt/CQkvG4fueXDi52Zskqxe2AyRJ+Wm54yqarnBgcX3qRIWh10qLVAAN+mlPFGTfP5UxvD3Fbi11UOTUQ==
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-6.1.2.tgz#1f045a90a6eb23557a603595f41a16c57d47adc6"
+  integrity sha512-EwKEgqJ7nJoS+s8QfLYVGMDmAsj+StbI2AM/RTHeUSsOw6Z8bwNBRv5z3CY0m7laC5qUAqruLX5AhMuc5deY3Q==
   dependencies:
     chownr "^2.0.0"
     fs-minipass "^2.0.0"
