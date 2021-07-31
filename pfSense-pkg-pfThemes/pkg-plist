@@ -5,7 +5,7 @@
 /etc/inc/priv/pfThemes.priv.inc
 
 @dir /usr/local/www/pfThemes
-/usr/local/www/pfThemes/pfThemes.php
+/usr/local/www/pfThemes/
 
 @dir /etc/inc/pfThemes
 /etc/inc/pfThemes/pfThemes.inc
