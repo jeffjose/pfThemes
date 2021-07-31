@@ -1,13 +1,9 @@
-@dir /usr/local/pkg
-/usr/local/pkg/pfThemes.xml
-
-@dir /etc/inc/priv
-/etc/inc/priv/pfThemes.priv.inc
-
-@dir /usr/local/www/pfThemes
-/usr/local/www/pfThemes/
-
-@dir /etc/inc/pfThemes
 /etc/inc/pfThemes/pfThemes.inc
-
+/etc/inc/priv/pfThemes.priv.inc
+pkg/pfThemes.xml
 %%DATADIR%%/info.xml
+www/pfThemes/pfThemes.php
+@dir www/pfThemes/app
+@dir /etc/inc/pfThemes
+@dir /etc/inc/priv
+@dir /etc/inc
