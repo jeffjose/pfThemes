@@ -2,7 +2,7 @@
   <head>
     <link
       rel="stylesheet"
-      href="/pfThemes/_astro/index-Z9wH80.css"
+      href="/pfThemes/app/_astro/index-Z9wH80.css"
       type="text/css"
     />
     <style type="text/css">
@@ -27,13 +27,13 @@
         </div></astro-root
       >
       <script type="module">
-        import setup from "/pfThemes/_astro_frontend/hydrate/visible.js";
+        import setup from "/pfThemes/app/_astro_frontend/hydrate/visible.js";
         setup("Zm67ys", {}, async () => {
           const [{ default: Component }, { default: hydrate }] =
             await Promise.all([
-              import("/pfThemes/_astro/src/components/Counter.svelte.js"),
+              import("/pfThemes/app/_astro/src/components/Counter.svelte.js"),
               import(
-                "/pfThemes/_snowpack/pkg/@astrojs.renderer-svelte.client.v0.1.1.js"
+                "/pfThemes/app/_snowpack/pkg/@astrojs.renderer-svelte.client.v0.1.1.js"
               )
             ]);
           return (el, children) => hydrate(el)(Component, {}, children);
