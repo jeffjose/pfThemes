@@ -19,8 +19,6 @@ NO_MTREE=	yes
 SUB_FILES=	pkg-install pkg-deinstall
 SUB_LIST=	PORTNAME=${PORTNAME}
 
-INSTALL_DIR = ${INSTALL} ${COPY} -d
-
 do-extract:
 	${MKDIR} ${WRKSRC}
 
@@ -40,9 +38,9 @@ do-install:
 	${INSTALL_DATA} ${FILESDIR}${PREFIX}/www/pfThemes/*.php \
 		${STAGEDIR}${PREFIX}/www/pfThemes
 
-	${INSTALL_DIR} ${FILESDIR}${PREFIX}/www/pfThemes/app/dist/ \
-		${STAGEDIR}${PREFIX}/www/pfThemes/app
-
+	${MKDIR} ${STAGEDIR}${PREFIX}/www/pfThemes/app
+	${TAR} cvf - --directory=${FILESDIR}${PREFIX}/www/pfThemes/app/dist . \
+		| ${TAR} xvf - --directory=${STAGEDIR}${PREFIX}/www/pfThemes/app
 
 	${MKDIR} ${STAGEDIR}/etc/inc/pfThemes
 	${INSTALL_DATA} ${FILESDIR}/etc/inc/pfThemes/*.inc \
