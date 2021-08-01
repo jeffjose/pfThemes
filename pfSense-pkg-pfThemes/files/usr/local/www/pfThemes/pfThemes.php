@@ -25,8 +25,12 @@ require_once('guiconfig.inc');
 
 $pgtitle = array(gettext('System'), gettext('Themes'));
 include("head.inc");
-
 ?>
+
+<?php
+    include("./app/index.html");
+?>
+
 <?php
 include("foot.inc");
 ?>
