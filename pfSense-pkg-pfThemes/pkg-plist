@@ -2,12 +2,12 @@
 /etc/inc/priv/pfThemes.priv.inc
 pkg/pfThemes.xml
 %%DATADIR%%/info.xml
-www/pfThemes/app/_astro/index-Z9wH80.css
+www/pfThemes/app/_astro/index-Z1nH1s8.css
 www/pfThemes/app/_astro/src/components/Counter.svelte.js
 www/pfThemes/app/_astro_frontend/hydrate/visible.js
 www/pfThemes/app/_snowpack/pkg/@astrojs.renderer-svelte.client.v0.1.1.js
 www/pfThemes/app/index.html
-www/pfThemes/app/svelte.internal.v3.41.0-eaaa1979.js
+www/pfThemes/app/svelte.internal.v3.40.3-be10e49b.js
 www/pfThemes/pfThemes.php
 @dir /etc/inc/pfThemes
 @dir /etc/inc/priv
