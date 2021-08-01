@@ -2,7 +2,7 @@
   <head>
     <link
       rel="stylesheet"
-      href="/pfThemes/app/_astro/index-Z9wH80.css"
+      href="/pfThemes/app/_astro/index-Z1nH1s8.css"
       type="text/css"
     />
     <style type="text/css">
@@ -14,7 +14,7 @@
   </head>
   <body>
     <main class="astro-ldKR6c5M">
-      <astro-root uid="Zm67ys"
+      <astro-root uid="Z21DGmB"
         ><div class="counter">
           <button>-</button>
           <pre>0</pre>
@@ -28,7 +28,7 @@
       >
       <script type="module">
         import setup from "/pfThemes/app/_astro_frontend/hydrate/visible.js";
-        setup("Zm67ys", {}, async () => {
+        setup("Z21DGmB", {}, async () => {
           const [{ default: Component }, { default: hydrate }] =
             await Promise.all([
               import("/pfThemes/app/_astro/src/components/Counter.svelte.js"),
@@ -36,7 +36,14 @@
                 "/pfThemes/app/_snowpack/pkg/@astrojs.renderer-svelte.client.v0.1.1.js"
               )
             ]);
-          return (el, children) => hydrate(el)(Component, {}, children);
+          return (el, children) =>
+            hydrate(el)(
+              Component,
+              {
+                "client:visible": true
+              },
+              children
+            );
         });
       </script>
     </main>
