@@ -7,10 +7,10 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.18.5"
+    "astro": "^0.21.4"
   },
   "dependencies": {
-    "esbuild": "^0.12.17",
-    "svelte": "^3.41.0"
+    "esbuild": "^0.13.15",
+    "svelte": "^3.44.2"
   }
 }
